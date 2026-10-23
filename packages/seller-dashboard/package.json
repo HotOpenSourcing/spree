@@ -3,7 +3,7 @@
   "version": "1.0.0-rc.6",
   "license": "MIT",
   "type": "module",
-  "description": "Spree marketplace seller panel — the seller-facing counterpart to the admin dashboard.",
+  "description": "Spree marketplace seller panel \u2014 the seller-facing counterpart to the admin dashboard.",
   "homepage": "https://spreecommerce.org",
   "author": "Vendo Connect Inc.",
   "keywords": [
@@ -36,7 +36,7 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "pnpm generate:routes && tsup",
+    "build": "node init && pnpm generate:routes && tsup",
     "typecheck": "tsc -b",
     "lint": "biome check .",
     "lint:fix": "biome check --fix .",

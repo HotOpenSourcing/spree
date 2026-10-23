@@ -19,7 +19,7 @@
     "dist/**/*.yaml"
   ],
   "scripts": {
-    "build": "node scripts/build.js",
+    "build": "node init && node scripts/build.js",
     "test": "vitest run",
     "clean": "rm -rf dist"
   },

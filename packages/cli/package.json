@@ -12,8 +12,8 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "node scripts/bundle-spec.mjs && node ../../scripts/sync-starter.mjs templates/dashboard-starter && node ../../scripts/sync-starter.mjs templates/seller-dashboard-starter seller-dashboard-starter && tsup",
-    "dev": "node scripts/bundle-spec.mjs && tsup --watch",
+    "build": "node init && node scripts/bundle-spec.mjs && node ../../scripts/sync-starter.mjs templates/dashboard-starter && node ../../scripts/sync-starter.mjs templates/seller-dashboard-starter seller-dashboard-starter && tsup",
+    "dev": "node init && node scripts/bundle-spec.mjs && tsup --watch",
     "test": "node scripts/bundle-spec.mjs && vitest run",
     "typecheck": "node scripts/bundle-spec.mjs && tsc --noEmit",
     "lint": "biome check src tests",

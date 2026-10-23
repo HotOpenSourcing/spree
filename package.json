@@ -3,8 +3,8 @@
   "private": true,
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "dev": "turbo dev",
-    "build": "turbo build",
+    "dev": "node init && turbo dev",
+    "build": "node init && turbo build",
     "test": "turbo test",
     "generate:zod": "pnpm --recursive --filter \"./packages/*\" run generate:zod",
     "generate:filters": "pnpm --recursive --filter \"./packages/*\" run generate:filters",
